@@ -10,11 +10,11 @@ public class ListCommand implements CLICommand {
 
 	public void process(BufferedReader in, PrintWriter out) throws IOException {
 		Book result[] = catalog.getBooks();
-		out.println("ｹ邱ﾗ" + result.length + "ｹ猯ﾜ");
+		out.println("合計" + result.length + "項目");
 		BookWriter w = new BookWriter(out, " ");
 		for (int i = 0; i < result.length; i++) {
 			out.println("[" + (i+1) + "]:");
-			out.println(" ｿﾞｽD: " + result[i].getBookId());
+			out.println(" 図書ID: " + result[i].getBookId());
 			w.write(result[i]);
 			out.println();
 		}

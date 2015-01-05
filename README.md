@@ -16,7 +16,7 @@
 * 図書管理システム紹介
 * コンパイル済みプログラム
 
-http://www.bcat.jp/
+http://bcat.fujiwaralab.net/
 
 ## ライセンス
 
